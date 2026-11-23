@@ -3,6 +3,9 @@
 // O mapa original fica incorporado no HTML; funciona sem servidor ou internet.
 const canvas=document.querySelector('canvas');
 const ctx=canvas.getContext('2d');
+const pinLabel=document.createElement('span');
+pinLabel.className='map-pin-label';pinLabel.hidden=true;
+canvas.parentElement.append(pinLabel);
 const source=new Image();
 const palette=[[95,120,98],[146,152,122],[158,173,153],[120,145,166],[134,168,157],[131,149,130],[166,167,148],[155,179,193],[119,142,159],[176,187,175]];
 const names=['Noroeste','Centro Ocidental','Norte Central','Norte Pioneiro','Centro Oriental','Oeste','Sudoeste','Centro-Sul','Sudeste','Metropolitana de Curitiba'];
@@ -81,6 +84,15 @@ source.onload=()=>{
 function render(){
  // A imagem completa permanece intacta em todos os quadros.
  ctx.globalAlpha=1;ctx.drawImage(source,0,0);
+ pinLabel.hidden=!pin;
+ if(pin){
+  pinLabel.textContent=regionNames[selectedRegion];
+  const rect=canvas.getBoundingClientRect();
+  const half=Math.min(pinLabel.offsetWidth/2,rect.width/2);
+  const x=pin.x*rect.width/canvas.width;
+  pinLabel.style.left=Math.max(half,Math.min(rect.width-half,x))+'px';
+  pinLabel.style.top=Math.max(pinLabel.offsetHeight,pin.y*rect.height/canvas.height-48)+'px';
+ }
  regions.forEach(({box,layer},i)=>{
   if(strengths[i]<=0)return;
   ctx.globalAlpha=strengths[i];ctx.drawImage(layer,box.x,box.y);

@@ -1,0 +1,6 @@
+/* Ajustes exclusivos do perfil e do acervo de Alice Ruiz. */
+.pagina-alice .retrato-alice { margin: 0 auto 45px; text-align: center; }
+.pagina-alice .nota-catalogo a { color: var(--azul); overflow-wrap: anywhere; }
+@media (max-width: 700px) {
+  body main.conteudo.pagina-alice { padding-inline: 24px; }
+}

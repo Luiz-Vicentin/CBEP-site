@@ -1,5 +1,49 @@
 /* Fontes e critérios bibliográficos: ver Documentacao/FONTES.md. */
 const catalogoObras = [
+{
+  "id": "alice",
+  "nome": "Alice Ruiz",
+  "pagina": "autores/obras-alice.html",
+  "obras": [
+    "Navalhanaliga",
+    "Paixão xama paixão",
+    "Pelos pêlos",
+    "Hai Tropikai",
+    "Rimagens",
+    "Vice-Versos",
+    "Desorientais",
+    "Yuuka",
+    "Dois em Um",
+    "Conversa de passarinhos",
+    "Nuvem feliz",
+    "Jardim de Haijin",
+    "Proesias",
+    "Outro silêncio",
+    "Afrodite: Quadrinhos Eróticos",
+    "Amorhumorumor"
+  ],
+  "links": {
+    "Navalhanaliga": "autores/alice-navalhanaliga.html",
+    "Paixão xama paixão": "autores/alice-paixao-xama-paixao.html",
+    "Pelos pêlos": "autores/alice-pelos-pelos.html",
+    "Hai Tropikai": "autores/alice-hai-tropikai.html",
+    "Rimagens": "autores/alice-rimagens.html",
+    "Vice-Versos": "autores/alice-vice-versos.html",
+    "Desorientais": "autores/alice-desorientais.html",
+    "Yuuka": "autores/alice-yuuka.html",
+    "Dois em Um": "autores/alice-dois-em-um.html",
+    "Conversa de passarinhos": "autores/alice-conversa-de-passarinhos.html",
+    "Nuvem feliz": "autores/alice-nuvem-feliz.html",
+    "Jardim de Haijin": "autores/alice-jardim-de-haijin.html",
+    "Proesias": "autores/alice-proesias.html",
+    "Outro silêncio": "autores/alice-outro-silencio.html",
+    "Afrodite: Quadrinhos Eróticos": "autores/alice-afrodite.html",
+    "Amorhumorumor": "autores/alice-amorhumorumor.html"
+  },
+  "aliases": {
+    "Amorhumorumor": "Amorumorhumor"
+  }
+},
   {
     "id": "laura",
     "nome": "Laura Santos",

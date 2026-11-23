@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Obras de Alice Ruiz | CBEP</title>
+<link href="../CSS/style.css?v=conteudo-amplo-5" rel="stylesheet"/>
+<link rel="stylesheet" href="../CSS/alice.css?v=alice-1">
+<script defer src="../JavaScript/obras-alice.js"></script>
+<script defer="" src="../JavaScript/script.js">
+</script>
+<script defer="" src="../JavaScript/catalogo.js">
+</script>
+
+<script defer src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<link rel="stylesheet" href="../CSS/acessibilidade.css">
+<script src="../JavaScript/acessibilidade.js"></script>
+</head>
+<body>
+<header class="cabecalho">
+<div class="marca">
+<a class="sigla" href="../index.html">
+     CBEP
+    </a>
+<span class="marca-descricao">
+     Catálogo bibliográfico de
+     <br/>
+     escritores paranaenses
+    </span>
+</div>
+<nav aria-label="Navegação principal" class="navegacao">
+<a href="../index.html">
+     Início
+    </a>
+<button aria-controls="painel-lateral" aria-expanded="false" data-menu="autores" type="button">
+     Autores
+    </button>
+<button aria-controls="painel-lateral" aria-expanded="false" data-menu="obras" type="button">
+     Obras
+    </button>
+<a href="../Paginas/mapa.html">
+     Mapa
+    </a>
+<a href="../Paginas/linha-do-tempo.html">Linha do tempo</a>
+<a href="../Paginas/outros.html">Outros</a>
+<a href="../Paginas/sobre.html">
+     Sobre
+    </a>
+<div class="acessibilidade">
+<button id="abrir-acessibilidade" class="acessibilidade-abrir" type="button" aria-label="Opções de acessibilidade" title="Acessibilidade" aria-expanded="false" aria-controls="painel-acessibilidade">
+<img src="../imagens/acessibilidade.png" alt="" width="32" height="32">
+</button>
+<div id="painel-acessibilidade" class="painel-acessibilidade" aria-labelledby="titulo-acessibilidade" hidden>
+<h2 id="titulo-acessibilidade" class="fonte-status">Acessibilidade</h2>
+<button id="alternar-contraste" aria-label="Alto contraste" class="alternar-contraste" type="button" aria-pressed="false"><span class="contraste-texto"><span class="contraste-rotulo">CONTRASTE</span><span class="contraste-icone" aria-hidden="true">◐</span></span><span id="contraste-estado" class="contraste-estado fonte-status">Desativado</span></button>
+<p class="fonte-status">Tamanho do texto</p>
+<div class="controles-fonte" role="group" aria-label="Tamanho do texto">
+<button type="button" data-fonte="diminuir" aria-label="Diminuir o texto" title="Diminuir o texto">A−</button>
+<button type="button" data-fonte="normal" aria-label="Restaurar tamanho padrão do texto" title="Restaurar tamanho padrão">A</button>
+<button type="button" data-fonte="aumentar" aria-label="Aumentar o texto" title="Aumentar o texto">A+</button>
+</div>
+<span id="fonte-status" class="fonte-status" role="status" aria-live="polite"></span>
+</div>
+</div>
+</nav>
+</header>
+<div class="faixa-azul">
+</div>
+<div class="estrutura">
+<aside aria-label="Catálogo lateral" class="painel-lateral" hidden="" id="painel-lateral">
+<div class="painel-topo">
+<h2 id="titulo-painel">
+      Obras
+     </h2>
+<button aria-label="Fechar barra lateral" class="fechar" id="fechar-painel" title="Recolher painel" type="button">
+      ‹
+     </button>
+</div>
+<label for="pesquisa" style="position:absolute;left:-9999px">
+     Pesquisar no catálogo
+    </label>
+<input autocomplete="off" class="pesquisa" id="pesquisa" placeholder="Pesquisar..." type="search"/>
+<ul id="lista-catalogo">
+</ul>
+<p hidden="" id="sem-resultados">
+     Nenhum resultado encontrado.
+    </p>
+</aside>
+<main class="conteudo pagina-obras-catalogo pagina-alice" id="conteudo">
+<h1>Obras de Alice Ruiz</h1>
+<section class="filtros-obras" aria-label="Pesquisar e filtrar obras">
+<label class="sr-only" for="busca-obras">Pesquisar pelo nome do livro</label>
+<div class="campo-busca-obras"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 5 5"/></svg><input id="busca-obras" type="search" placeholder="Pesquisar pelo nome do livro..." autocomplete="off"></div>
+<div class="decadas-obras" role="group" aria-label="Período de publicação"><button type="button" class="decada selecionada" data-decada="todas" aria-pressed="true">Todas</button><button type="button" class="decada" data-decada="1980" aria-pressed="false">1980–1989</button>
+<button type="button" class="decada" data-decada="1990" aria-pressed="false">1990–1999</button>
+<button type="button" class="decada" data-decada="2000" aria-pressed="false">2000–2009</button>
+<button type="button" class="decada" data-decada="2010" aria-pressed="false">2010–2019</button>
+<button type="button" class="decada" data-decada="2020" aria-pressed="false">2020–2029</button></div>
+<p id="contagem-obras" class="contagem-obras" role="status" aria-live="polite">16 obras · ordem de lançamento</p>
+</section>
+<ul class="grade-obras" id="grade-obras"><li class="obra-item" data-titulo="Navalhanaliga" data-decada="1980"><a class="obra-cartao" href="alice-navalhanaliga.html"><img class="capa" src="https://img.travessa.com.br/livro/GR/92/9268ca7a-05f5-433a-a98d-ba48b37749b2.jpg" alt="Capa de Navalhanaliga" loading="lazy" referrerpolicy="no-referrer"><span class="obra-titulo">Navalhanaliga</span><span class="obra-ano">(1980)</span></a></li>
+<li class="obra-item" data-titulo="Paixão xama paixão" data-decada="1980"><a class="obra-cartao" href="alice-paixao-xama-paixao.html"><img class="capa" src="https://www.aliceruiz.mpbnet.com.br/bibliografia/images/paixao_xama_paixao.jpg" alt="Capa de Paixão xama paixão" loading="lazy" referrerpolicy="no-referrer"><span class="obra-titulo">Paixão xama paixão</span><span class="obra-ano">(1983)</span></a></li>
+<li class="obra-item" data-titulo="Pelos pêlos" data-decada="1980"><a class="obra-cartao" href="alice-pelos-pelos.html"><img class="capa" src="https://www.aliceruiz.mpbnet.com.br/bibliografia/images/pelos_pelos.jpg" alt="Capa de Pelos pêlos" loading="lazy" referrerpolicy="no-referrer"><span class="obra-titulo">Pelos pêlos</span><span class="obra-ano">(1984)</span></a></li>
+<li class="obra-item" data-titulo="Hai Tropikai" data-decada="1980"><a class="obra-cartao" href="alice-hai-tropikai.html"><img class="capa" src="https://www.aliceruiz.mpbnet.com.br/bibliografia/images/hai_tropikai.jpg" alt="Capa de Hai Tropikai" loading="lazy" referrerpolicy="no-referrer"><span class="obra-titulo">Hai Tropikai</span><span class="obra-ano">(1985)</span></a></li>
+<li class="obra-item" data-titulo="Rimagens" data-decada="1980"><a class="obra-cartao" href="alice-rimagens.html"><img class="capa" src="https://www.aliceruiz.mpbnet.com.br/bibliografia/images/rimagens.jpg" alt="Capa de Rimagens" loading="lazy" referrerpolicy="no-referrer"><span class="obra-titulo">Rimagens</span><span class="obra-ano">(1985)</span></a></li>
+<li class="obra-item" data-titulo="Vice-Versos" data-decada="1980"><a class="obra-cartao" href="alice-vice-versos.html"><img class="capa" src="https://www.aliceruiz.mpbnet.com.br/bibliografia/images/viceversos.jpg" alt="Capa de Vice-Versos" loading="lazy" referrerpolicy="no-referrer"><span class="obra-titulo">Vice-Versos</span><span class="obra-ano">(1988)</span></a></li>
+<li class="obra-item" data-titulo="Desorientais" data-decada="1990"><a class="obra-cartao" href="alice-desorientais.html"><img class="capa" src="https://www.aliceruiz.mpbnet.com.br/bibliografia/images/desorientais.jpg" alt="Capa de Desorientais" loading="lazy" referrerpolicy="no-referrer"><span class="obra-titulo">Desorientais</span><span class="obra-ano">(1996)</span></a></li>
+<li class="obra-item" data-titulo="Yuuka" data-decada="2000"><a class="obra-cartao" href="alice-yuuka.html"><img class="capa" src="https://www.aliceruiz.mpbnet.com.br/bibliografia/images/yuuka.jpg" alt="Capa de Yuuka" loading="lazy" referrerpolicy="no-referrer"><span class="obra-titulo">Yuuka</span><span class="obra-ano">(2004)</span></a></li>
+<li class="obra-item" data-titulo="Dois em Um" data-decada="2000"><a class="obra-cartao" href="alice-dois-em-um.html"><img class="capa" src="https://www.iluminuras.com.br/media/catalog/product/cache/1/image/600x600/9df78eab33525d08d6e5fb8d27136e95/9/7/9788573212754.jpg" alt="Capa de Dois em Um" loading="lazy" referrerpolicy="no-referrer"><span class="obra-titulo">Dois em Um</span><span class="obra-ano">(2008)</span></a></li>
+<li class="obra-item" data-titulo="Conversa de passarinhos" data-decada="2000"><a class="obra-cartao" href="alice-conversa-de-passarinhos.html"><img class="capa" src="https://www.aliceruiz.mpbnet.com.br/bibliografia/images/conversa_de_passarinhos.jpg" alt="Capa de Conversa de passarinhos" loading="lazy" referrerpolicy="no-referrer"><span class="obra-titulo">Conversa de passarinhos</span><span class="obra-ano">(2008)</span></a></li>
+<li class="obra-item" data-titulo="Nuvem feliz" data-decada="2010"><a class="obra-cartao" href="alice-nuvem-feliz.html"><img class="capa" src="https://martinsfontespaulista.vteximg.com.br/arquivos/ids/790653/622673_ampliada.jpg" alt="Capa de Nuvem feliz" loading="lazy" referrerpolicy="no-referrer"><span class="obra-titulo">Nuvem feliz</span><span class="obra-ano">(2010)</span></a></li>
+<li class="obra-item" data-titulo="Jardim de Haijin" data-decada="2010"><a class="obra-cartao" href="alice-jardim-de-haijin.html"><img class="capa" src="https://www.aliceruiz.mpbnet.com.br/bibliografia/images/jardim_de_haijin.jpg" alt="Capa de Jardim de Haijin" loading="lazy" referrerpolicy="no-referrer"><span class="obra-titulo">Jardim de Haijin</span><span class="obra-ano">(2010)</span></a></li>
+<li class="obra-item" data-titulo="Proesias" data-decada="2010"><a class="obra-cartao" href="alice-proesias.html"><img class="capa" src="https://www.aliceruiz.mpbnet.com.br/bibliografia/images/proesias.jpg" alt="Capa de Proesias" loading="lazy" referrerpolicy="no-referrer"><span class="obra-titulo">Proesias</span><span class="obra-ano">(2010)</span></a></li>
+<li class="obra-item" data-titulo="Outro silêncio" data-decada="2010"><a class="obra-cartao" href="alice-outro-silencio.html"><img class="capa" src="https://ciadasletras.vtexassets.com/arquivos/ids/218891/capa-recolor2-9788565771146.jpg" alt="Capa de Outro silêncio" loading="lazy" referrerpolicy="no-referrer"><span class="obra-titulo">Outro silêncio</span><span class="obra-ano">(2015)</span></a></li>
+<li class="obra-item" data-titulo="Afrodite: Quadrinhos Eróticos" data-decada="2010"><a class="obra-cartao" href="alice-afrodite.html"><img class="capa" src="https://veneta.com.br/cdn/shop/files/69acd6898bfae.jpg?width=480" alt="Capa de Afrodite: Quadrinhos Eróticos" loading="lazy" referrerpolicy="no-referrer"><span class="obra-titulo">Afrodite: Quadrinhos Eróticos</span><span class="obra-ano">(2015)</span></a></li>
+<li class="obra-item" data-titulo="Amorhumorumor" data-decada="2020"><a class="obra-cartao" href="alice-amorhumorumor.html"><img class="capa" src="https://ciadasletras.vtexassets.com/arquivos/ids/187067/cdl-9788535933192.jpg" alt="Capa de Amorhumorumor" loading="lazy" referrerpolicy="no-referrer"><span class="obra-titulo">Amorhumorumor</span><span class="obra-ano">(2020)</span></a></li></ul>
+<div id="obras-vazias" class="obras-vazias" hidden><p>Nenhuma obra encontrada. Tente outro título ou outra década.</p><button id="limpar-filtros" type="button">Limpar filtros</button></div>
+<section class="nota-catalogo" aria-label="Sobre o acervo"><p>Seleção de 16 obras de Alice Ruiz. As capas apresentadas podem pertencer a edições posteriores aos anos indicados.</p><a class="link-complemento" href="alice-ruiz.html">Conhecer Alice Ruiz</a></section>
+</main>
+</div>
+<footer class="rodape">
+<div class="rodape-marca">
+<strong>
+     CBEP
+    </strong>
+<small>
+     Catálogo bibliográfico de escritores paranaenses
+     <br/>
+     2026
+    </small>
+</div>
+<a class="contato" href="https://docs.google.com/forms/d/e/1FAIpQLSdd1gX3RLJQvGTrSzDLbFLiX2kR7PA3aKx731pIQG-7ZLPJAg/viewform" target="_blank" rel="noopener noreferrer">Envie seu feedback</a>
+</footer>
+</body>
+</html>
+

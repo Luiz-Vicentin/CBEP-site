@@ -1,0 +1,131 @@
+[
+  {
+    "titulo": "Navalhanaliga",
+    "ano": 1980,
+    "slug": "navalhanaliga",
+    "nota": "Primeiro livro de poesia da autora.",
+    "capa": "https://img.travessa.com.br/livro/GR/92/9268ca7a-05f5-433a-a98d-ba48b37749b2.jpg",
+    "fonte": "https://www.travessa.com.br/navalhanaliga/artigo/9268ca7a-05f5-433a-a98d-ba48b37749b2"
+  },
+  {
+    "titulo": "Paixão xama paixão",
+    "ano": 1983,
+    "slug": "paixao-xama-paixao",
+    "nota": "",
+    "capa": "https://www.aliceruiz.mpbnet.com.br/bibliografia/images/paixao_xama_paixao.jpg",
+    "fonte": "https://www.aliceruiz.mpbnet.com.br/bibliografia/index.html"
+  },
+  {
+    "titulo": "Pelos pêlos",
+    "ano": 1984,
+    "slug": "pelos-pelos",
+    "nota": "",
+    "capa": "https://www.aliceruiz.mpbnet.com.br/bibliografia/images/pelos_pelos.jpg",
+    "fonte": "https://www.aliceruiz.mpbnet.com.br/bibliografia/index.html"
+  },
+  {
+    "titulo": "Hai Tropikai",
+    "ano": 1985,
+    "slug": "hai-tropikai",
+    "nota": "Em parceria com Paulo Leminski.",
+    "capa": "https://www.aliceruiz.mpbnet.com.br/bibliografia/images/hai_tropikai.jpg",
+    "fonte": "https://www.aliceruiz.mpbnet.com.br/bibliografia/index.html"
+  },
+  {
+    "titulo": "Rimagens",
+    "ano": 1985,
+    "slug": "rimagens",
+    "nota": "",
+    "capa": "https://www.aliceruiz.mpbnet.com.br/bibliografia/images/rimagens.jpg",
+    "fonte": "https://www.aliceruiz.mpbnet.com.br/bibliografia/index.html"
+  },
+  {
+    "titulo": "Vice-Versos",
+    "ano": 1988,
+    "slug": "vice-versos",
+    "nota": "Vencedor do Prêmio Jabuti de Poesia em 1989.",
+    "capa": "https://www.aliceruiz.mpbnet.com.br/bibliografia/images/viceversos.jpg",
+    "fonte": "https://www.aliceruiz.mpbnet.com.br/bibliografia/index.html"
+  },
+  {
+    "titulo": "Desorientais",
+    "ano": 1996,
+    "slug": "desorientais",
+    "nota": "Livro de haicais.",
+    "capa": "https://www.aliceruiz.mpbnet.com.br/bibliografia/images/desorientais.jpg",
+    "fonte": "https://www.aliceruiz.mpbnet.com.br/bibliografia/index.html"
+  },
+  {
+    "titulo": "Yuuka",
+    "ano": 2004,
+    "slug": "yuuka",
+    "nota": "",
+    "capa": "https://www.aliceruiz.mpbnet.com.br/bibliografia/images/yuuka.jpg",
+    "fonte": "https://www.aliceruiz.mpbnet.com.br/bibliografia/index.html"
+  },
+  {
+    "titulo": "Dois em Um",
+    "ano": 2008,
+    "slug": "dois-em-um",
+    "nota": "Reúne obras anteriores, como Vice-Versos e Pelos pêlos. Vencedor do Prêmio Jabuti em 2009.",
+    "capa": "https://www.iluminuras.com.br/media/catalog/product/cache/1/image/600x600/9df78eab33525d08d6e5fb8d27136e95/9/7/9788573212754.jpg",
+    "fonte": "https://www.iluminuras.com.br/dois-em-um"
+  },
+  {
+    "titulo": "Conversa de passarinhos",
+    "ano": 2008,
+    "slug": "conversa-de-passarinhos",
+    "nota": "Infantojuvenil em parceria com Maria Valéria Rezende.",
+    "capa": "https://www.aliceruiz.mpbnet.com.br/bibliografia/images/conversa_de_passarinhos.jpg",
+    "fonte": "https://www.aliceruiz.mpbnet.com.br/bibliografia/index.html"
+  },
+  {
+    "titulo": "Nuvem feliz",
+    "ano": 2010,
+    "slug": "nuvem-feliz",
+    "nota": "Livro infantojuvenil.",
+    "capa": "https://martinsfontespaulista.vteximg.com.br/arquivos/ids/790653/622673_ampliada.jpg",
+    "fonte": "https://editora34.com.br/livro/563",
+    "fonteCapa": "https://www.martinsfontespaulista.com.br/nuvem-feliz-622673/p"
+  },
+  {
+    "titulo": "Jardim de Haijin",
+    "ano": 2010,
+    "slug": "jardim-de-haijin",
+    "nota": "",
+    "capa": "https://www.aliceruiz.mpbnet.com.br/bibliografia/images/jardim_de_haijin.jpg",
+    "fonte": "https://www.aliceruiz.mpbnet.com.br/bibliografia/index.html"
+  },
+  {
+    "titulo": "Proesias",
+    "ano": 2010,
+    "slug": "proesias",
+    "nota": "Prosa poética.",
+    "capa": "https://www.aliceruiz.mpbnet.com.br/bibliografia/images/proesias.jpg",
+    "fonte": "https://www.aliceruiz.mpbnet.com.br/bibliografia/index.html"
+  },
+  {
+    "titulo": "Outro silêncio",
+    "ano": 2015,
+    "slug": "outro-silencio",
+    "nota": "Coletânea de haicais.",
+    "capa": "https://ciadasletras.vtexassets.com/arquivos/ids/218891/capa-recolor2-9788565771146.jpg",
+    "fonte": "https://www.companhiadasletras.com.br/livro/9788565771146/outro-silencio"
+  },
+  {
+    "titulo": "Afrodite: Quadrinhos Eróticos",
+    "ano": 2015,
+    "slug": "afrodite",
+    "nota": "Histórias em quadrinhos em parceria com Paulo Leminski.",
+    "capa": "https://veneta.com.br/cdn/shop/files/69acd6898bfae.jpg?width=480",
+    "fonte": "https://veneta.com.br/products/afrodite-quadrinhos-eroticos-2a-edicao"
+  },
+  {
+    "titulo": "Amorhumorumor",
+    "ano": 2020,
+    "slug": "amorhumorumor",
+    "nota": "Escrito em conjunto com Rodolfo Guttilla.",
+    "capa": "https://ciadasletras.vtexassets.com/arquivos/ids/187067/cdl-9788535933192.jpg",
+    "fonte": "https://www.companhiadasletras.com.br/livro/9788535933192/amorhumorumor"
+  }
+]

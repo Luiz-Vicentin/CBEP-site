@@ -17,3 +17,13 @@
 @media (max-width: 600px) {
   .pagina-outros .outros-introducao { margin-bottom: 40px; }
 }
+
+/* Video a esquerda e sinopse a direita, com empilhamento em telas menores. */
+.pagina-outros .outros-video-layout { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 32px; align-items: start; }
+.pagina-outros .outros-video-coluna, .pagina-outros .outros-sinopse { min-width: 0; }
+.pagina-outros .outros-sinopse .titulo-sinopse { margin-top: 0; margin-bottom: 20px; }
+.pagina-outros .outros-sinopse > p { line-height: 1.9; }
+.pagina-outros .outros-sinopse > .outros-saiba-mais:first-child { margin-top: 0; }
+@media (max-width: 1000px) {
+ .pagina-outros .outros-video-layout { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+}

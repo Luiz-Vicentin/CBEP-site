@@ -59,3 +59,17 @@ Datas da produção principal conferidas com bibliografias e referências: https
 O Grande Deflorador: corrigido para 2000, conforme registro de primeira edição da Biblioteca de Santo André (https://www.santoandre.sp.gov.br/biblioteca/pesquisa/con_detalhe.asp?ID=59632) e notícia contemporânea de dezembro de 2000 (https://www.folhadelondrina.com.br/folha-2/trevisan-lanca-um-olhar-tragico-sobre-o-genero-humano-314983.html).
 
 Atualização solicitada pelo usuário: capas de Sete Anos de Pastor e Guia Histórico de Curitiba fornecidas pelo usuário. 77 Ais e Noites de Amor em Granada retirados do catálogo e suas páginas removidas. Seleção atual: 63 títulos, 60 capas; filtro Sem data removido.
+
+
+## Alice Ruiz — perfil e acervo
+Biografia, características literárias, 16 títulos, anos e notas fornecidos pelo usuário. Destaques: Navalhanaliga (1980), Vice-Versos (1988) e Dois em Um (2008). Complemento e referências do perfil aguardam o material do usuário. Sem sinopses ou fichas editoriais inventadas.
+
+Fotografia: Lucila Wroblewski, acervo pessoal de Alice Ruiz, disponível em https://www.aliceruiz.mpbnet.com.br/bibliografia/index.html .
+
+Capas externas: endereços e fontes em alice-obras.json. O download local está indisponível por restrição de rede; as imagens requerem internet. As capas podem ser de edições posteriores aos anos indicados. A grafia Amorhumorumor foi conferida na Companhia das Letras; a variante fornecida pelo usuário foi mantida como termo de busca.
+
+
+## Alice Ruiz — descrições das obras principais
+Navalhanaliga e Dois em Um: textos integrais fornecidos pelo usuário, entre aspas; fichas conferidas nas fontes indicadas. Navalhanaliga: edição Arte e Letra de 2026, ISBN 9788571620414, 120 páginas, conforme Livraria da Travessa; capa atualizada para a edição consultada. Dois em Um: Iluminuras, ISBN 9788573212754, 208 páginas; data da edição não informada na página consultada. O ano 2008 indicado junto ao título corresponde à publicação da obra já informada no acervo.
+- https://www.travessa.com.br/navalhanaliga/artigo/9268ca7a-05f5-433a-a98d-ba48b37749b2
+- https://www.iluminuras.com.br/dois-em-um
