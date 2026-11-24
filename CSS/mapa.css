@@ -4,7 +4,7 @@
 .pagina-mapa .mapa-layout.has-selection{grid-template-columns:minmax(0,1fr) 285px}
 .pagina-mapa .map-wrap{min-width:0;align-self:center}
 .pagina-mapa .mapa-layout:not(.has-selection) .map-wrap{width:100%;max-width:850px;justify-self:center}
-@media(min-width:851px){.pagina-mapa .mapa-layout:not(.has-selection) .map-wrap{width:calc(100% - 280px)}}
+@media(min-width:851px){.pagina-mapa .mapa-layout:not(.has-selection) .map-wrap{width:calc(100% - 309px);justify-self:start}}
 .pagina-mapa canvas{display:block;width:100%;height:auto;touch-action:manipulation;outline:none}
 .pagina-mapa canvas:focus-visible{outline:2px solid var(--azul);outline-offset:3px}
 .pagina-mapa .panel[hidden]{display:none}

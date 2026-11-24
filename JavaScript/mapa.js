@@ -273,14 +273,10 @@ function setupMapTour(){
  function positionCard(){
   if(overlay.hidden)return;
   const vw=document.documentElement.clientWidth;
-  const rect=canvas.parentElement.getBoundingClientRect();
-  const rightSpace=vw-rect.right-32,leftSpace=rect.left-32;
-  const useRight=rightSpace>=leftSpace;
-  const available=Math.max(rightSpace,leftSpace);
-  const width=available>=220?Math.min(320,available):Math.min(320,vw-24);
+  // O guia fica à esquerda; a coluna à direita pertence à lista.
+  const width=Math.min(320,vw-112);
   popover.style.width=width+'px';
-  let x=available>=220?(useRight?rect.right+20:rect.left-width-20):vw-width-12;
-  popover.style.left=Math.max(12,Math.min(vw-width-12,x))+'px';
+  popover.style.left='12px';
   popover.style.top='24px';
   positionPreview();
  }
@@ -289,11 +285,11 @@ function setupMapTour(){
   const mapRect=canvas.parentElement.getBoundingClientRect();
   const layoutRect=layout.getBoundingClientRect();
   const vw=document.documentElement.clientWidth;
-  const rightSpace=vw-mapRect.right-32,leftSpace=mapRect.left-32;
-  const beside=Math.max(rightSpace,leftSpace)>=220;
-  const width=beside?Math.min(285,Math.max(rightSpace,leftSpace)):Math.min(285,layoutRect.width);
-  const rightSide=rightSpace>=leftSpace;
-  const left=beside?(rightSide?mapRect.right-layoutRect.left+20:mapRect.left-layoutRect.left-width-20):0;
+  // Reserva 100px para os controles fixos de acessibilidade e Libras.
+  const rightSpace=vw-100-mapRect.right-20;
+  const beside=rightSpace>=220;
+  const width=beside?Math.min(285,rightSpace):Math.min(285,layoutRect.width,vw-112);
+  const left=beside?mapRect.right-layoutRect.left+20:Math.max(0,Math.min(mapRect.left-layoutRect.left,vw-100-width-layoutRect.left));
   const top=mapRect.top-layoutRect.top+(beside?0:mapRect.height+24);
   preview.style.width=width+'px';
   preview.style.left=left+'px';

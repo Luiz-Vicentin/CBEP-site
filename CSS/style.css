@@ -751,3 +751,4 @@ body main.conteudo .campo-busca-obras { max-width: 100%; }
 @media (max-width: 850px) {
   body main.conteudo { padding-inline: clamp(18px, 4vw, 32px); }
 }
+
