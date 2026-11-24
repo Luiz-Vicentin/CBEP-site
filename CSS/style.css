@@ -746,3 +746,8 @@ body main.conteudo .campo-busca-obras { max-width: 100%; }
   body main.conteudo .outros-introducao,
   body main.conteudo .outros-destaque > p { font-size: 1.0625rem; line-height: 1.75; }
 }
+
+/* No celular e no tablet, preserva espaço para leitura e para o mapa. */
+@media (max-width: 850px) {
+  body main.conteudo { padding-inline: clamp(18px, 4vw, 32px); }
+}

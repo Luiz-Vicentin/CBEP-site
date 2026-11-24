@@ -1,0 +1,1 @@
+.cabecalho .marca{align-items:flex-start}.cabecalho-qr{display:block;flex:0 0 80px;margin-left:auto;line-height:0}.cabecalho-qr img{display:block;width:80px;height:80px;background:#fff}.cabecalho-qr:focus-visible{outline:3px solid #fff;outline-offset:4px}@media(max-width:480px){.cabecalho-qr{flex-basis:64px}.cabecalho-qr img{width:64px;height:64px}}

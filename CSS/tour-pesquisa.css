@@ -1,0 +1,25 @@
+/* Mesmo acabamento compacto do tutorial do mapa. */
+.pesquisa-tour[hidden]{display:none}
+.pesquisa-tour{position:fixed;box-sizing:border-box;width:320px;max-width:calc(100vw - 24px);max-height:calc(100dvh - 48px);overflow:auto;background:#fff;border-top:4px solid var(--azul);border-radius:6px;padding:18px 20px;box-shadow:0 12px 32px rgba(0,0,0,.28);color:#233136;z-index:10000}
+.pesquisa-tour-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.pesquisa-tour-badge{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--verde)}
+.pesquisa-tour-close{background:none;border:0;font-size:1.35rem;line-height:1;color:#65777e;cursor:pointer;padding:2px 6px;border-radius:4px;min-width:32px;min-height:32px}
+.pesquisa-tour-close:hover{background:#eef3f5;color:#233136}
+.pesquisa-tour h3{margin:0 0 8px;font-size:1.1rem;color:var(--azul);font-weight:700;line-height:1.3}
+.pesquisa-tour p{margin:0 0 16px;font-size:.9rem;line-height:1.55;color:#3d4f56;text-align:left}
+.pesquisa-tour-footer{display:flex;justify-content:space-between;align-items:center;gap:8px;border-top:1px solid #e4ecef;padding-top:12px}
+.pesquisa-tour-count{font-size:.75rem;color:#65777e}
+.pesquisa-tour-done{background:var(--azul);border:0;color:#fff;font:600 .85rem/1 Arial,sans-serif;padding:8px 14px;border-radius:4px;cursor:pointer;min-height:40px}
+.pesquisa-tour-done:hover{filter:brightness(1.1)}
+.pesquisa-tour button:focus-visible,.ajuda-pesquisa:focus-visible{outline:2px solid var(--azul);outline-offset:2px}
+.painel-lateral #pesquisa.pesquisa-tour-highlight{outline:3px solid var(--azul);outline-offset:5px}
+.pesquisa-cabecalho{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:28px}
+.pesquisa-cabecalho h1{flex:1;margin-top:0}
+.ajuda-pesquisa{display:inline-flex;align-items:center;gap:8px;flex-shrink:0;width:fit-content;margin:4px 0 0;padding:8px 14px;border:1.5px solid var(--azul);border-radius:6px;background:#fff;color:var(--azul);font:600 .875rem/1.2 Arial,sans-serif;cursor:pointer}
+.ajuda-pesquisa span{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;background:var(--azul);color:#fff;font-size:.75rem;font-weight:700}
+.ajuda-pesquisa:hover{background:var(--azul);color:#fff}
+.ajuda-pesquisa:hover span{background:#fff;color:var(--azul)}
+html[data-alto-contraste] .pesquisa-tour{background:#000;color:#fff;border-color:#ff0}
+html[data-alto-contraste] .pesquisa-tour :is(h3,p,span,button){color:#fff}
+html[data-alto-contraste] .pesquisa-tour button{background:#000;border:1px solid #ff0}
+html[data-alto-contraste] .pesquisa-tour button:focus-visible{outline-color:#ff0}

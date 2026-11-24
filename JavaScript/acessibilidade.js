@@ -3,16 +3,17 @@
   let tamanho = 100;
   let contraste = false;
   const fontesOriginais = new WeakMap();
-  const seletorTexto = 'main h1, main h2, main h3, main h4, main h5, main h6, main p, main li, main dt, main dd, main blockquote, main figcaption, main span, main a, main strong, main em, main small, main label, main td, main th';
+  const seletorTexto = 'main h1, main h2, main h3, main h4, main h5, main h6, main p, main li, main dt, main dd, main blockquote, main figcaption, main span, main a, main strong, main em, main small, main label, main td, main th, .painel-lateral h2, .painel-lateral h3, .painel-lateral p, .painel-lateral a, .painel-lateral span, .painel-lateral label, .painel-lateral input, .painel-lateral button, .cabecalho .sigla, .cabecalho .marca-descricao, .cabecalho .navegacao > a, .cabecalho .navegacao > button';
   const ampliarConteudo = () => {
     const textos = [...document.querySelectorAll(seletorTexto)].filter(elemento =>
-      !elemento.closest('button, input, select, textarea, .acessibilidade, .voltar-obras, .veja-mais, .outros-saiba-mais > a, .navegacao-obras, .decada, [role="button"]'));
+      elemento.closest('.painel-lateral, .cabecalho') || !elemento.closest('button, input, select, textarea, .acessibilidade, .voltar-obras, .veja-mais, .outros-saiba-mais > a, .navegacao-obras, .decada, [role="button"]'));
     // Mede todos antes de aplicar para evitar que tamanhos herdados se multipliquem.
     textos.forEach(elemento => {
       if (!fontesOriginais.has(elemento)) fontesOriginais.set(elemento, parseFloat(getComputedStyle(elemento).fontSize));
     });
     textos.forEach(elemento => {
-      elemento.style.fontSize = tamanho === 100 ? '' : (fontesOriginais.get(elemento) * tamanho / 100) + 'px';
+      if (tamanho === 100) elemento.style.removeProperty('font-size');
+      else elemento.style.setProperty('font-size', (fontesOriginais.get(elemento) * tamanho / 100) + 'px', elemento.closest('.painel-lateral, .cabecalho') ? 'important' : '');
     });
   };
   try {
@@ -33,8 +34,9 @@
   };
   aplicar();
   document.addEventListener('DOMContentLoaded', () => {
-    const conteudo = document.querySelector('main');
-    if (conteudo) new MutationObserver(ampliarConteudo).observe(conteudo, {childList: true, subtree: true});
+    document.querySelectorAll('main, .painel-lateral').forEach(conteudo => {
+      new MutationObserver(ampliarConteudo).observe(conteudo, {childList: true, subtree: true});
+    });
     const abrir = document.querySelector('#abrir-acessibilidade');
     const painel = document.querySelector('#painel-acessibilidade');
     if (painel) painel.innerHTML = `
