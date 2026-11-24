@@ -21,7 +21,7 @@
   const key='cbep-tour-perfil-v1';
   const card=document.createElement('div');card.className='autor-tour';card.hidden=true;
   card.setAttribute('role','dialog');card.setAttribute('aria-labelledby','autor-tour-title');card.setAttribute('aria-describedby','autor-tour-desc');
-  card.innerHTML=`<div class="autor-tour-header"><span class="autor-tour-badge" role="status" aria-live="polite"></span><button type="button" class="autor-tour-close" aria-label="Fechar tutorial">×</button></div><h3 id="autor-tour-title"></h3><p id="autor-tour-desc"></p><div class="autor-tour-footer"><button type="button" class="autor-tour-skip">Pular</button><div class="autor-tour-nav"><button type="button" class="autor-tour-prev">Anterior</button><button type="button" class="autor-tour-next">Próximo</button></div></div>`;
+  card.innerHTML=`<div class="autor-tour-header"><span class="autor-tour-badge">CONHEÇA O CBEP</span><button type="button" class="autor-tour-close" aria-label="Fechar tutorial">×</button></div><h3 id="autor-tour-title"></h3><p id="autor-tour-desc"></p><div class="autor-tour-footer"><span class="autor-tour-count" role="status" aria-live="polite"></span><div class="autor-tour-nav"><button type="button" class="autor-tour-prev">Anterior</button><button type="button" class="autor-tour-next">Próximo</button></div></div>`;
   document.body.append(card);
   const help=document.createElement('button');help.type='button';help.className='autor-tour-abrir';help.setAttribute('aria-haspopup','dialog');help.innerHTML='<span aria-hidden="true">?</span> Como usar esta página';
   main.querySelector('h1').insertAdjacentElement('afterend',help);
@@ -30,7 +30,7 @@
   function clear(){steps.forEach(step=>step.section.classList.remove('autor-tour-highlight'))}
   function show(){
    clear();const step=steps[current];step.section.classList.add('autor-tour-highlight');
-   card.querySelector('.autor-tour-badge').textContent='Passo '+(current+1)+' de '+steps.length;
+   card.querySelector('.autor-tour-count').textContent=(current+1)+' de '+steps.length;
    card.querySelector('#autor-tour-title').textContent=step.title;
    card.querySelector('#autor-tour-desc').textContent=step.text;
    prev.hidden=current===0;next.textContent=current===steps.length-1?'Entendi!':'Próximo';
@@ -42,7 +42,6 @@
   function open(){if(!card.hidden)return;previousFocus=document.activeElement;current=0;card.hidden=false;try{localStorage.setItem(key,'visto')}catch(_){}show()}
   help.addEventListener('click',open);
   card.querySelector('.autor-tour-close').addEventListener('click',close);
-  card.querySelector('.autor-tour-skip').addEventListener('click',close);
   next.addEventListener('click',()=>{if(current===steps.length-1)close();else{current++;show()}});
   prev.addEventListener('click',()=>{if(current>0){current--;show()}});
   document.addEventListener('keydown',event=>{if(!card.hidden&&event.key==='Escape'){event.preventDefault();event.stopImmediatePropagation();close()}},true);

@@ -13,7 +13,7 @@
 .autor-tour-next{background:var(--azul);color:#fff}
 .autor-tour-prev{background:#eef3f5;color:#233136}
 .autor-tour-prev[hidden]{display:none}
-.autor-tour-skip{background:none;border:0;color:#65777e;font-size:.85rem;cursor:pointer;padding:6px 4px;text-decoration:underline;min-height:40px}
+.autor-tour-count{font:400 .85rem/1.4 Arial,sans-serif;color:#65777e}
 .autor-tour button:focus-visible,.autor-tour-abrir:focus-visible{outline:2px solid var(--azul);outline-offset:2px}
 body main.conteudo .autor-tour-highlight{outline:3px solid var(--azul);outline-offset:8px;border-radius:8px;scroll-margin-top:24px}
 .autor-tour-abrir{display:flex;align-items:center;gap:8px;width:fit-content;margin:0 0 24px auto;padding:8px 14px;background:#fff;border:1.5px solid var(--azul);color:var(--azul);font:600 .875rem/1.2 Arial,sans-serif;border-radius:6px;cursor:pointer}
