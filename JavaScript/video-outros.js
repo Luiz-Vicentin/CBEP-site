@@ -4,7 +4,8 @@
     ['video-helena', 'video-aviso-helena'],
     ['video-olivio', 'video-aviso-olivio'],
     ['video-luci', 'video-aviso-luci'],
-    ['video-alice', 'video-aviso-alice']
+    ['video-alice', 'video-aviso-alice'],
+    ['video-laura', 'video-aviso-laura']
   ].map(([id, avisoId]) => ({frame: document.getElementById(id), aviso: document.getElementById(avisoId)}))
     .filter(({frame, aviso}) => frame && aviso);
   if (!videos.length) return;
